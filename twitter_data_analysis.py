@@ -1,6 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+import re
+
+#Reading the twitter data csv file
 twitter_data = pd.read_csv('twitter_data.csv')
 
 #Extracting only tweets column text from the data
@@ -11,7 +14,7 @@ tweets = twitter_data["tweet"].values
 tweet_string=str(tweets)
 
 #converting all text to lower case
-import re
+
 cleaned_tweet_string=tweet_string.lower()
 
 #removing the twitter usernames from the tweet string

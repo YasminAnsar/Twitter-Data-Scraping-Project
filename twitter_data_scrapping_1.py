@@ -27,4 +27,4 @@ tweet_list = [[status.user, status.full_text] for status in tweet_result]
 tweet_df = pd.DataFrame(data = tweet_list, columns=["user_id","tweet"])
 tweet_df
 #Converting dataframe to csv file
-#tweet_df.to_csv(r'twitter_inflation_data.csv', index=False)
+tweet_df.to_csv(r'twitter_inflation_data.csv', index=False)

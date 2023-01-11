@@ -1,2 +1,2 @@
-# Scraping and Analyzing Twitter Data Project-1
+# Scraping and Analyzing Twitter Data Project
 It my first project using python. 
